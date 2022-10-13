@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+<html>
+    <style>
+      body {
+        background-color: rgb(113, 238, 165);
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+      }
+      @keyframes example {
+        from {background-color:#deecb5;}
+        to {background-color:#f1e0e0;}
+    
+      }
+
+
+        .center {
+          margin: auto;
+          width: 60%;
+          border: 3px solid #73AD21;
+          padding: 10px;
+        }
+
+        h1{
+            padding: 40px;
+            height: 40px;
+            text-align: centre;
+            background: #5c0707;
+            color: white;
+            font-size: 50px;
+        
+          }
+
+          h4{
+            
+            
+            text-align: centre;
+            background: #383838;
+            color: white;
+            font-size: 35px;
+        
+          }
+
+
+          h2{
+            background: #000000;
+            color: white;
+            font-size: 40px;
+        </style>
+
+        <h1 align="center"> Prediction Of Welding Defects </h1>
+<body>
+ 
+	
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('text')}}"method="post">
+    <div class="center"><input type="text" name="current" placeholder="current" required="required" /></div>
+        
+    
+    
+    <div class="center"><input type="text" name="humidity" placeholder="humidity" required="required" /></div>
+	
+
+       
+    
+       
+    <div class="center"><input type="text" name="temp" placeholder="temp" required="required" /></div>
+
+
+    <div class="center"><input type="text" name="flow" placeholder="flow" required="required" /></div>
+        
+    
+    
+    <div class="center"><input type="text" name="job temp" placeholder="job temp" required="required" /></div>
+
+
+    <div class="center"><input type="text" name="voltage" placeholder="voltage" required="required" /></div>
+	
+    
+    
+    <div align="center"><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></div>
+        </form>
+       
+    
+
+   
+   <p><h4 align="center"> Prediction:{{prediction}}</h4></p>
+   <h2 align="center"><b>Example</b></h2>
+
+
+  <h3><b>No Defect</b></h3>
+  <ul>
+   <li>current:25.55</li>
+ <li>Humidity:84</li>
+ <li>Temprature:23</li>
+ <li>flow:3.12</li>
+ <li>Job temp:30.1</li>
+ <li>Voltage:9.115</li>
+</ul>
+
+
+
+   <h3><b>Porosity </b></h3>
+   <ul>
+    <li>current:-0.47</li>
+  <li>Humidity:70</li>
+  <li>Temprature:24</li>
+  <li>flow:2.58</li>
+  <li>Job temp:3276.7</li>
+  <li>Voltage:0</li>
+</ul>
+
+
+<h3><b>Tungsten Inclusion</b></h3>
+   <ul>
+    <li>current:15.64</li>
+  <li>Humidity:73</li>
+  <li>Temprature:24</li>
+  <li>flow:2.88</li>
+  <li>Job temp:56.8</li>
+  <li>Voltage:6.172</li>
+</ul>
+
+
+
+
+   
+
+</div>
+
+
+</body>
+</html>
