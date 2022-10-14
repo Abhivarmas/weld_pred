@@ -2,8 +2,7 @@ from flask import Flask, flash, request, redirect, url_for, render_template
 from flask import session
 import pickle
 
-import os
-from werkzeug.utils import secure_filename
+
 
 import numpy as np
 
