@@ -5,3 +5,7 @@ werkzeug==2.2.2
 gunicorn==19.9.0
 Jinja2>=3.0
 MarkupSafe>=2.1.1
+pandas>=0.19
+scipy>=0.15.1
+scikit-learn>=0.18
+itsdangerous==1.1.0
