@@ -15,5 +15,7 @@ https://dashboard.heroku.com/apps/weld-pred/deploy/github
 
 
 test data accuracy-:82%
+
 train data accuracy-:85%
+
 f1_score-82%
