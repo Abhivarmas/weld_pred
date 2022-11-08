@@ -14,7 +14,7 @@ here we have 3 class.the name is given as below.
 (3)Porosity
 
 Deployement link.
-https://dashboard.heroku.com/apps/weld-pred/deploy/github
+https://weld-pred.herokuapp.com/
 
 
 test data accuracy-:82%
