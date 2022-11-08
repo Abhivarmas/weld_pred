@@ -6,6 +6,7 @@ this project is numpy,pandas,sklearn,and flask for the webpage.heroku is used he
 for deployement of webpage.
 
 here we have 3 class.the name is given as below.
+
 (1)No defect
 
 (2)Tungsten Inclusion
