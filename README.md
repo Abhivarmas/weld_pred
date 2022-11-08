@@ -7,7 +7,9 @@ for deployement of webpage.
 
 here we have 3 class.the name is given as below.
 (1)No defect
+
 (2)Tungsten Inclusion
+
 (3)Porosity
 
 Deployement link.
